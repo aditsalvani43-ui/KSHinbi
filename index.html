@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototype v3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Player -->
+    <section class="player">
+      <h2>Player v3</h2>
+      <audio id="audio" preload="metadata" autoplay loop>
+        <source src="Juicy%20Luicy%20-%20Lantas%20(Official%20Lyric%20Video)%20-%20Emotion%20Entertainment.mp3" type="audio/mpeg">
+        Browser kamu tidak mendukung audio.
+      </audio>
+      <div class="controls">
+        <button id="playBtn">Pause</button>
+        <div class="progress" id="progressBar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time">
+          <span id="currentTime">0:00</span>
+          <span id="duration">0:00</span>
+        </div>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.8" />
+      </div>
+      <div id="errorMsg" class="error"></div>
+      <div class="visualizer" id="visualizer"></div>
+    </section>
+
+    <!-- Chat -->
+    <section class="chat">
+      <h2>Chat</h2>
+      <div class="chat-box" id="chatBox"></div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Ketik pesan..." />
+        <button id="sendBtn">Kirim</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+                                    </html>
+                                    
